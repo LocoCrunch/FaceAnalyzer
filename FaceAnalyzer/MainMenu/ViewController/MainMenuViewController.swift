@@ -40,6 +40,19 @@ extension MainMenuViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainMenuCollectionViewCell", for: indexPath) as! MainMenuCollectionViewCell
         cell.mainMenuButtonImage.image = UIImage(named: self.iconImageName[indexPath.row])
+        
+        if iconImageName == ["BEAUTY_COMPETITION"] {
+            description1Label.text = "BEAUTY COMPETITION"
+        } else if iconImageName == ["COMPATIBILITY"] {
+            description1Label.text = "COMPATIBILITY"
+        } else if iconImageName == ["FUTURE_CHILD"] {
+            description1Label.text = "FUTURE CHILD"
+        } else if iconImageName == ["HOROSCOPE"] {
+            description1Label.text = "HOROSCOPE"
+        } else if iconImageName == ["PERSONAL_EFFECTIVE"] {
+            description1Label.text = "PERSONAL EFFECTIVE"
+        }
+        
         return cell
     }
 }
@@ -65,39 +78,28 @@ extension MainMenuViewController: UICollectionViewDelegate, UICollectionViewDele
 extension MainMenuViewController {
     
     func configure() {
-        configureDescriptionLabel()
         iconsPosition()
-        configureCollectionView()
+        hideNavigationItems()
         //showTabBarViewController()
-    }
-    
-    func configureDescriptionLabel() {
-        if iconImageName == ["BEAUTY_COMPETITION"] {
-            description1Label.text = "BEAUTY COMPETITION"
-        } else if iconImageName == ["COMPATIBILITY"] {
-            description1Label.text = "COMPATIBILITY"
-        } else if iconImageName == ["FUTURE_CHILD"] {
-            description1Label.text = "FUTURE CHILD"
-        } else if iconImageName == ["HOROSCOPE"] {
-            description1Label.text = "HOROSCOPE"
-        } else if iconImageName == ["PERSONAL_EFFECTIVE"] {
-            description1Label.text = "PERSONAL EFFECTIVE"
-        }
+        configureCollectionView()
     }
     
     func iconsPosition() {
         mainMenuCollectionView.contentInset = UIEdgeInsets(top: 0, left: -1.0, bottom: 0, right: 1.0)
     }
     
+    func hideNavigationItems() {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+//    func showTabBarViewController() {
+//        let tabBarVC = TabBarViewController()
+//        present(tabBarVC, animated: true, completion: nil)
+//        tabBarVC.modalPresentationStyle = .overFullScreen
+//    }
     
     func configureCollectionView() {
         mainMenuCollectionView.dataSource = self
         mainMenuCollectionView.delegate = self
     }
-    
-//    func showTabBarViewController() {
-//        let tabBarVC = TabBarViewController()
-//        tabBarVC.modalPresentationStyle = .overFullScreen
-//        present(tabBarVC, animated: true, completion: nil)
-//    }
 }

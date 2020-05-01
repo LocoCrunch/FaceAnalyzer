@@ -39,13 +39,13 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-        let mainVC = UIStoryboard(storyboard: .nameEnter).instantiateInitialViewController() as! NameEnterViewController
+        let mainVC = UIStoryboard(storyboard: .dontKnowZodiak).instantiateInitialViewController() as! DontKnowZodiakViewController
         let navigationController = UINavigationController(rootViewController: mainVC)
-        //let mainVC = TabBarViewController()
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
         if let window = window {
+            //window.rootViewController = TabBarViewController()
             window.rootViewController = navigationController
             window.makeKeyAndVisible()
         }

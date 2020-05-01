@@ -31,6 +31,7 @@ class NameEnterViewController: UIViewController {
 private extension NameEnterViewController {
     
     func configure() {
+        self.hideKeyboardWhenTappedAround()
         hideNavigationBar()
         configureContinueButtonAction()
         configureEnterNameTextField()
@@ -41,13 +42,15 @@ private extension NameEnterViewController {
     }
     
     func configureContinueButtonAction() {
-        continueButtonAction.layer.cornerRadius = 27
-        continueButtonAction.layer.borderWidth = 1
-        continueButtonAction.layer.borderColor = UIColor(red: 146 / 255, green: 88 / 255, blue: 154 / 255, alpha: 1).cgColor
-        
-        if enterNameTextField.text?.isEmpty == false {
+        if enterNameTextField.text?.isEmpty == true {
+            continueButtonAction.layer.cornerRadius = 27
+            continueButtonAction.layer.borderWidth = 1
+            continueButtonAction.layer.borderColor = UIColor(red: 146 / 255, green: 88 / 255, blue: 154 / 255, alpha: 1).cgColor
+            continueButtonAction.isEnabled = false
+        } else {
             continueButtonAction.setTitleColor(.white, for: .normal)
             continueButtonAction.backgroundColor = UIColor(red: 243 / 255, green: 129 / 255, blue: 11 / 255, alpha: 1)
+            continueButtonAction.layer.cornerRadius = 27
             let gradientLayer = CAGradientLayer()
             gradientLayer.frame = continueButtonAction.bounds
             continueButtonAction.layer.insertSublayer(gradientLayer, at: 0)
@@ -57,8 +60,6 @@ private extension NameEnterViewController {
             gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
             gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
             gradientLayer.cornerRadius = 27
-        } else {
-            return continueButtonAction.isEnabled = false
         }
         
         

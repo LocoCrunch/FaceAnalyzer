@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N48-QH-krI">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -13,15 +13,71 @@
             <objects>
                 <viewController id="N48-QH-krI" customClass="DontKnowZodiakViewController" customModule="FaceAnalyzer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9hO-BE-4qL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background_horoscope" translatesAutoresizingMaskIntoConstraints="NO" id="fFy-5O-55V">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Capricorn" translatesAutoresizingMaskIntoConstraints="NO" id="2E6-TE-MYP">
+                                <rect key="frame" x="117.5" y="60" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="MMV-5g-TGc"/>
+                                    <constraint firstAttribute="height" constant="140" id="OGa-97-NCy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capricorn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JkH-uG-7Lf">
+                                <rect key="frame" x="20" y="230" width="335" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="dhF-jf-e6B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <color key="textColor" red="0.95294117649999999" green="0.78880840090000004" blue="0.35710941489999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fR5-6h-Efj">
+                                <rect key="frame" x="33.5" y="568" width="308" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="3WT-Fn-XsX"/>
+                                    <constraint firstAttribute="width" constant="308" id="goU-K3-t7N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="0.57254901960000004" green="0.34509803919999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Hdl-fj-lvK">
+                                <rect key="frame" x="0.0" y="314" width="375" height="180"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="UDP-fY-FSM"/>
+                                </constraints>
+                            </datePicker>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Hdl-fj-lvK" firstAttribute="leading" secondItem="rPl-eW-ah5" secondAttribute="leading" id="3oB-eG-I8U"/>
+                            <constraint firstItem="fR5-6h-Efj" firstAttribute="centerX" secondItem="9hO-BE-4qL" secondAttribute="centerX" id="BJp-c0-o3F"/>
+                            <constraint firstItem="JkH-uG-7Lf" firstAttribute="leading" secondItem="rPl-eW-ah5" secondAttribute="leading" constant="20" id="ERP-8D-aFM"/>
+                            <constraint firstItem="rPl-eW-ah5" firstAttribute="bottom" secondItem="fR5-6h-Efj" secondAttribute="bottom" constant="45" id="EZW-qO-1Gn"/>
+                            <constraint firstItem="JkH-uG-7Lf" firstAttribute="top" secondItem="2E6-TE-MYP" secondAttribute="bottom" constant="30" id="Kzu-CJ-wso"/>
+                            <constraint firstItem="Hdl-fj-lvK" firstAttribute="top" secondItem="JkH-uG-7Lf" secondAttribute="bottom" constant="50" id="LYp-10-BYD"/>
+                            <constraint firstItem="rPl-eW-ah5" firstAttribute="trailing" secondItem="Hdl-fj-lvK" secondAttribute="trailing" id="YWg-NR-foM"/>
+                            <constraint firstItem="rPl-eW-ah5" firstAttribute="trailing" secondItem="JkH-uG-7Lf" secondAttribute="trailing" constant="20" id="Yzh-7r-m82"/>
+                            <constraint firstItem="2E6-TE-MYP" firstAttribute="top" secondItem="rPl-eW-ah5" secondAttribute="top" constant="60" id="ec3-W0-kWR"/>
+                            <constraint firstItem="2E6-TE-MYP" firstAttribute="centerX" secondItem="9hO-BE-4qL" secondAttribute="centerX" id="o7N-kA-oW4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rPl-eW-ah5"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXC-Ov-wAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114" y="125"/>
+            <point key="canvasLocation" x="-116" y="123.68815592203899"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Capricorn" width="50.5" height="61"/>
+        <image name="background_horoscope" width="375" height="812"/>
+    </resources>
 </document>

@@ -41,9 +41,6 @@ extension ChoozeZodiakCollectionViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChooseZodiak", for: indexPath) as! ChooseZodiakCollectionViewCell
         let zodiak = zodiaks[indexPath.row]
-        //cell.chooseZodiakImageView.image = UIImage(named: zodiak.image)
-        //cell.dateChooseZodiakLabel.text = zodiak.date
-        //cell.nameChooseZodiakLabel.text = zodiak.zodiakName
         cell.set(zodiak: zodiak)
         return cell
     }
@@ -58,10 +55,8 @@ extension ChoozeZodiakCollectionViewController: UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let zodiak = zodiaks[indexPath.row]
-        //let subscriptionNavigationViewController = UIStoryboard(name: "Main" , bundle: nil).instantiateInitialViewController() as! UINavigationController
-        //let subscriptionViewController = subscriptionNavigationViewController.viewControllers[0] as! subscriptionViewController
-        //subscriptionViewController.photo = photo
-        //present(subscriptionNavigationViewController, animated: true, completion: nil)
+        let subscriptionViewController = UIStoryboard(name: "Subscription" , bundle: nil).instantiateInitialViewController() as! SubscriptionViewController
+        present(subscriptionViewController, animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
