@@ -70,6 +70,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rPl-eW-ah5"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundDontKnowZodiakImage" destination="fFy-5O-55V" id="mSS-Pc-bdN"/>
+                        <outlet property="continueDontKnowButton" destination="fR5-6h-Efj" id="Kmc-WU-Apw"/>
+                        <outlet property="dateZodiakPicker" destination="Hdl-fj-lvK" id="N1c-1a-mLF"/>
+                        <outlet property="zodiakDontKnowImageView" destination="2E6-TE-MYP" id="I6R-q6-cwn"/>
+                        <outlet property="zodiakDontKnowLabel" destination="JkH-uG-7Lf" id="YsE-oC-z3i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXC-Ov-wAw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
