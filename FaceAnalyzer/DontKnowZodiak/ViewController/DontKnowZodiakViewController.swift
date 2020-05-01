@@ -40,6 +40,7 @@ extension DontKnowZodiakViewController {
     func configurePickerAppearance() {
         let color = UIColor.white
         dateZodiakPicker.setValue(color, forKey: "textColor")
+        dateZodiakPicker.setValue(false, forKey: "highlightsToday")
     }
     
     func configureButtonAppearance() {

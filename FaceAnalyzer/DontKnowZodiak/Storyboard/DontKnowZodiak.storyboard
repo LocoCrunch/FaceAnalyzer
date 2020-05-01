@@ -46,6 +46,9 @@
                                 <state key="normal" title="CONTINUE">
                                     <color key="titleColor" red="0.57254901960000004" green="0.34509803919999998" blue="0.60392156860000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="continueDontKnowButtonAction:" destination="N48-QH-krI" eventType="touchUpInside" id="3UW-Zh-vg6"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Hdl-fj-lvK">
                                 <rect key="frame" x="0.0" y="314" width="375" height="180"/>

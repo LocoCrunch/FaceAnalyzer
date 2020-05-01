@@ -14,5 +14,6 @@ pod 'SwiftyGif'
 pod 'RealmSwift'
 pod 'SwiftyStoreKit'
 pod 'DeviceKit', '~> 2.0'
+pod 'CollectionViewPagingLayout'
 
 end
