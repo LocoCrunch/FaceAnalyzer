@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48091C9E245E068C004111B9 /* PersonalEffectiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48091C9D245E068C004111B9 /* PersonalEffectiveViewController.swift */; };
+		48091CA0245E069C004111B9 /* PersonalEffective.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48091C9F245E069C004111B9 /* PersonalEffective.storyboard */; };
+		48091CA2245E06E1004111B9 /* CompatibilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48091CA1245E06E1004111B9 /* CompatibilityViewController.swift */; };
+		48091CA4245E06ED004111B9 /* Compatibility.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48091CA3245E06ED004111B9 /* Compatibility.storyboard */; };
+		48091CA6245E0726004111B9 /* FutureChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48091CA5245E0726004111B9 /* FutureChildViewController.swift */; };
+		48091CA8245E0731004111B9 /* FutureChild.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48091CA7245E0731004111B9 /* FutureChild.storyboard */; };
+		48091CAA245E0757004111B9 /* HoroscopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48091CA9245E0757004111B9 /* HoroscopeViewController.swift */; };
+		48091CAC245E0760004111B9 /* Horoscope.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48091CAB245E0760004111B9 /* Horoscope.storyboard */; };
+		48091CAE245E07A0004111B9 /* BeautyCompetitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48091CAD245E07A0004111B9 /* BeautyCompetitionViewController.swift */; };
+		48091CB0245E07A8004111B9 /* BeautyCompetition.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48091CAF245E07A8004111B9 /* BeautyCompetition.storyboard */; };
 		4887B4DF242BF962004D5153 /* ContentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4DE242BF962004D5153 /* ContentManager.swift */; };
 		4887B4E1242BF977004D5153 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4887B4E0242BF977004D5153 /* DataBaseManager.swift */; };
 		4887B4E7242F9BAE004D5153 /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4887B4E6242F9BAE004D5153 /* Subscription.storyboard */; };
@@ -47,6 +57,16 @@
 
 /* Begin PBXFileReference section */
 		00964BCB3063EDC1BEADCD23 /* Pods-FaceAnalyzer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FaceAnalyzer.release.xcconfig"; path = "Target Support Files/Pods-FaceAnalyzer/Pods-FaceAnalyzer.release.xcconfig"; sourceTree = "<group>"; };
+		48091C9D245E068C004111B9 /* PersonalEffectiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalEffectiveViewController.swift; sourceTree = "<group>"; };
+		48091C9F245E069C004111B9 /* PersonalEffective.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PersonalEffective.storyboard; sourceTree = "<group>"; };
+		48091CA1245E06E1004111B9 /* CompatibilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompatibilityViewController.swift; sourceTree = "<group>"; };
+		48091CA3245E06ED004111B9 /* Compatibility.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Compatibility.storyboard; sourceTree = "<group>"; };
+		48091CA5245E0726004111B9 /* FutureChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureChildViewController.swift; sourceTree = "<group>"; };
+		48091CA7245E0731004111B9 /* FutureChild.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FutureChild.storyboard; sourceTree = "<group>"; };
+		48091CA9245E0757004111B9 /* HoroscopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeViewController.swift; sourceTree = "<group>"; };
+		48091CAB245E0760004111B9 /* Horoscope.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Horoscope.storyboard; sourceTree = "<group>"; };
+		48091CAD245E07A0004111B9 /* BeautyCompetitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeautyCompetitionViewController.swift; sourceTree = "<group>"; };
+		48091CAF245E07A8004111B9 /* BeautyCompetition.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BeautyCompetition.storyboard; sourceTree = "<group>"; };
 		4887B4DE242BF962004D5153 /* ContentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentManager.swift; sourceTree = "<group>"; };
 		4887B4E0242BF977004D5153 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
 		4887B4E6242F9BAE004D5153 /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
@@ -100,6 +120,131 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48091C8E245E0555004111B9 /* PersonalEffective */ = {
+			isa = PBXGroup;
+			children = (
+				48091C94245E061C004111B9 /* Storyboard */,
+				48091C93245E0611004111B9 /* ViewController */,
+			);
+			path = PersonalEffective;
+			sourceTree = "<group>";
+		};
+		48091C8F245E0571004111B9 /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				48091C96245E0633004111B9 /* Storyboard */,
+				48091C95245E062A004111B9 /* ViewController */,
+			);
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		48091C90245E058A004111B9 /* FutureChild */ = {
+			isa = PBXGroup;
+			children = (
+				48091C98245E0644004111B9 /* Storyboard */,
+				48091C97245E063B004111B9 /* ViewController */,
+			);
+			path = FutureChild;
+			sourceTree = "<group>";
+		};
+		48091C91245E05A6004111B9 /* Horoscope */ = {
+			isa = PBXGroup;
+			children = (
+				48091C9A245E0653004111B9 /* Storyboard */,
+				48091C99245E064C004111B9 /* ViewController */,
+			);
+			path = Horoscope;
+			sourceTree = "<group>";
+		};
+		48091C92245E05B6004111B9 /* BeautyCompetition */ = {
+			isa = PBXGroup;
+			children = (
+				48091C9C245E0660004111B9 /* Storyboard */,
+				48091C9B245E0659004111B9 /* ViewController */,
+			);
+			path = BeautyCompetition;
+			sourceTree = "<group>";
+		};
+		48091C93245E0611004111B9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48091C9D245E068C004111B9 /* PersonalEffectiveViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48091C94245E061C004111B9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48091C9F245E069C004111B9 /* PersonalEffective.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		48091C95245E062A004111B9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48091CA1245E06E1004111B9 /* CompatibilityViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48091C96245E0633004111B9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48091CA3245E06ED004111B9 /* Compatibility.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		48091C97245E063B004111B9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48091CA5245E0726004111B9 /* FutureChildViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48091C98245E0644004111B9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48091CA7245E0731004111B9 /* FutureChild.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		48091C99245E064C004111B9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48091CA9245E0757004111B9 /* HoroscopeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48091C9A245E0653004111B9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48091CAB245E0760004111B9 /* Horoscope.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		48091C9B245E0659004111B9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				48091CAD245E07A0004111B9 /* BeautyCompetitionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		48091C9C245E0660004111B9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48091CAF245E07A8004111B9 /* BeautyCompetition.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		4887B4DD242BF927004D5153 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -349,6 +494,11 @@
 		48D0AD702425FA1700E69E92 /* FaceAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
+				48091C92245E05B6004111B9 /* BeautyCompetition */,
+				48091C91245E05A6004111B9 /* Horoscope */,
+				48091C90245E058A004111B9 /* FutureChild */,
+				48091C8F245E0571004111B9 /* Compatibility */,
+				48091C8E245E0555004111B9 /* PersonalEffective */,
 				48A6F468243A3955002E97F1 /* TermsOfService */,
 				4887B50D2433AA03004D5153 /* DontKnowZodiak */,
 				4887B4F92430C74C004D5153 /* Settings  */,
@@ -551,15 +701,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D0AD7E2425FA1900E69E92 /* LaunchScreen.storyboard in Resources */,
+				48091CA4245E06ED004111B9 /* Compatibility.storyboard in Resources */,
 				48A6F46C243A3997002E97F1 /* TermsOfService.storyboard in Resources */,
 				4887B4F52430C4F2004D5153 /* MainMenu.storyboard in Resources */,
 				4887B5112433AA35004D5153 /* DontKnowZodiak.storyboard in Resources */,
 				4887B5012430C7B9004D5153 /* Profile.storyboard in Resources */,
+				48091CB0245E07A8004111B9 /* BeautyCompetition.storyboard in Resources */,
 				48D0ADA024275FA400E69E92 /* ChooseZodiak.storyboard in Resources */,
 				48D0AD92242632DE00E69E92 /* logo.gif in Resources */,
+				48091CA0245E069C004111B9 /* PersonalEffective.storyboard in Resources */,
 				4887B4E7242F9BAE004D5153 /* Subscription.storyboard in Resources */,
 				4887B5052430C814004D5153 /* Settings.storyboard in Resources */,
+				48091CA8245E0731004111B9 /* FutureChild.storyboard in Resources */,
 				48D0AD7B2425FA1900E69E92 /* Assets.xcassets in Resources */,
+				48091CAC245E0760004111B9 /* Horoscope.storyboard in Resources */,
 				48A6F467243A30FF002E97F1 /* logo1.gif in Resources */,
 				48D0AD9924264F8900E69E92 /* NameEnter.storyboard in Resources */,
 			);
@@ -618,15 +773,18 @@
 				4887B4F72430C511004D5153 /* MainMenuViewController.swift in Sources */,
 				48D0ADA22427615000E69E92 /* ChoozeZodiakCollectionViewController.swift in Sources */,
 				48A6F46E243A457E002E97F1 /* TermsOfServiceViewController.swift in Sources */,
+				48091CA2245E06E1004111B9 /* CompatibilityViewController.swift in Sources */,
 				48D0AD762425FA1700E69E92 /* ViewController.swift in Sources */,
 				48D0AD8B2425FD4800E69E92 /* LogoConstraints.swift in Sources */,
 				4887B4E1242BF977004D5153 /* DataBaseManager.swift in Sources */,
 				4887B4DF242BF962004D5153 /* ContentManager.swift in Sources */,
+				48091CAA245E0757004111B9 /* HoroscopeViewController.swift in Sources */,
 				4887B4FF2430C7A9004D5153 /* ProfileViewController.swift in Sources */,
 				48D0AD722425FA1700E69E92 /* AppDelegate.swift in Sources */,
 				48A6F475245C940F002E97F1 /* KeyboardDismissExtension.swift in Sources */,
 				4887B4EC242FF26B004D5153 /* SubscriptionIAPManager.swift in Sources */,
 				4887B5092430D317004D5153 /* Storyboard.swift in Sources */,
+				48091CA6245E0726004111B9 /* FutureChildViewController.swift in Sources */,
 				4887B5142438B9B2004D5153 /* SettingsTableViewCell.swift in Sources */,
 				48D0AD9B2426595300E69E92 /* NameEnterViewController.swift in Sources */,
 				48D0AD882425FCC500E69E92 /* LogoAnimationView.swift in Sources */,
@@ -634,6 +792,8 @@
 				48D0ADA62427A82B00E69E92 /* ChooseZodiakCollectionViewCell.swift in Sources */,
 				4887B4F02430C216004D5153 /* TabBarViewController.swift in Sources */,
 				48D0ADA82427A85E00E69E92 /* ZodiakModel.swift in Sources */,
+				48091C9E245E068C004111B9 /* PersonalEffectiveViewController.swift in Sources */,
+				48091CAE245E07A0004111B9 /* BeautyCompetitionViewController.swift in Sources */,
 				4887B50C2430D5F3004D5153 /* StoryboardExtension.swift in Sources */,
 				4887B5032430C803004D5153 /* SettingsViewController.swift in Sources */,
 				48A6F4702454DF30002E97F1 /* DontKnowZodiakViewController.swift in Sources */,

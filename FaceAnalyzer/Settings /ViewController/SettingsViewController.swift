@@ -30,6 +30,7 @@ class SettingsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         showTabBar()
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     
