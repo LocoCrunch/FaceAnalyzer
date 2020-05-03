@@ -1,6 +1,7 @@
 PODS:
   - CollectionViewPagingLayout (0.1.3)
   - DeviceKit (2.3.0)
+  - PhotoSolution (1.5.8)
   - Realm (4.4.1):
     - Realm/Headers (= 4.4.1)
   - Realm/Headers (4.4.1)
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - CollectionViewPagingLayout
   - DeviceKit (~> 2.0)
+  - PhotoSolution
   - RealmSwift
   - SwiftyGif
   - SwiftyStoreKit
@@ -20,6 +22,7 @@ SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - CollectionViewPagingLayout
     - DeviceKit
+    - PhotoSolution
     - Realm
     - RealmSwift
     - SwiftyGif
@@ -28,11 +31,12 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   CollectionViewPagingLayout: c2875d9a2536902785d8ac7b8ad78a52b98b7e7f
   DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  PhotoSolution: 686bb17ac296f7a613bc592e098a7eac6b9e1353
   Realm: 4eb04d7487bd43c0581256f40b424eafb711deff
   RealmSwift: 3eb8924ff7100df5928c7602f71d0fec51e7c9c5
   SwiftyGif: b85c6b33a9411859d9e1db998b6a8214aea942df
   SwiftyStoreKit: 033d06b6f87955405d3f844a18a7687c2438592a
 
-PODFILE CHECKSUM: 5a4d194e23d0a9c94aba9ff9b4e113953b24472c
+PODFILE CHECKSUM: 391a5a04662b0836bfbfe4723dcfbaf0994ea000
 
 COCOAPODS: 1.8.4

@@ -15,5 +15,6 @@ pod 'RealmSwift'
 pod 'SwiftyStoreKit'
 pod 'DeviceKit', '~> 2.0'
 pod 'CollectionViewPagingLayout'
+pod 'PhotoSolution'
 
 end
