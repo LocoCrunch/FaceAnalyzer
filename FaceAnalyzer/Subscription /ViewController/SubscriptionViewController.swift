@@ -42,18 +42,18 @@ class SubscriptionViewController: UIViewController {
 
 extension SubscriptionViewController {
     
-    @IBAction func startSubscriptionButtonAction(_ sender: Any) {
-    
-        
-    }
+    @IBAction func startSubscriptionButtonAction(_ sender: Any) {}
     
     @IBAction func closeButtonAction(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        if let navigationController = navigationController {
+            navigationController.popViewController(animated: true)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
     }
     
 }
     
-
 // MARK: -
 // MARK: - Configure
 
@@ -78,7 +78,5 @@ extension SubscriptionViewController {
     func editCloseButton() {
         closeButton.layer.cornerRadius = 15
     }
-    
-    
-    
+
 }

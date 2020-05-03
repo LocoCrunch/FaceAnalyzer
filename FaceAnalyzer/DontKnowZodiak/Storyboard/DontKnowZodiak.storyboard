@@ -56,6 +56,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="UDP-fY-FSM"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="datePickerValueChanged:" destination="N48-QH-krI" eventType="valueChanged" id="bcX-W7-jIV"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

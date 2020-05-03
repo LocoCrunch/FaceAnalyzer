@@ -39,14 +39,14 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-//        let mainVC = UIStoryboard(storyboard: .mainMenu).instantiateInitialViewController() as! MainMenuViewController
-//        let navigationController = UINavigationController(rootViewController: mainVC)
+        let mainVC = UIStoryboard(storyboard: .nameEnter).instantiateInitialViewController() as! NameEnterViewController
+        let navigationController = UINavigationController(rootViewController: mainVC)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
         if let window = window {
-            window.rootViewController = TabBarViewController()
-            //window.rootViewController = navigationController
+            //window.rootViewController = TabBarViewController()
+            window.rootViewController = navigationController
             window.makeKeyAndVisible()
         }
         

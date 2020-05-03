@@ -20,7 +20,6 @@ class NameEnterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        
     }
     
 }
@@ -42,7 +41,7 @@ private extension NameEnterViewController {
     }
     
     func configureContinueButtonAction() {
-        if enterNameTextField.text?.isEmpty == true {
+        if enterNameTextField.text?.isEmpty == false {
             continueButtonAction.layer.cornerRadius = 27
             continueButtonAction.layer.borderWidth = 1
             continueButtonAction.layer.borderColor = UIColor(red: 146 / 255, green: 88 / 255, blue: 154 / 255, alpha: 1).cgColor

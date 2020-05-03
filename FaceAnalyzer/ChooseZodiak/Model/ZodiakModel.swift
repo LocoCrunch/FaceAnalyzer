@@ -18,6 +18,39 @@ class ZodiakModel: Object {
         return "zodiakName"
     }
     
+    static func zodiak(for date: Date) -> ZodiakModel {
+        let calendar = Calendar.current
+        let d = calendar.component(.day, from: date)
+        let m = calendar.component(.month, from: date)
+
+        switch (d,m) {
+        case (21...31,1),(1...19,2):
+            return ZodiakModel.aquarius()
+        case (20...29,2),(1...20,3):
+            return ZodiakModel.pisces()
+        case (21...31,3),(1...20,4):
+            return ZodiakModel.aries()
+        case (21...30,4),(1...21,5):
+            return ZodiakModel.taurus()
+        case (22...31,5),(1...21,6):
+            return ZodiakModel.gemini()
+        case (22...30,6),(1...22,7):
+            return ZodiakModel.cancer()
+        case (23...31,7),(1...22,8):
+            return ZodiakModel.leo()
+        case (23...31,8),(1...23,9):
+            return ZodiakModel.virgo()
+        case (24...30,9),(1...23,10):
+            return ZodiakModel.libra()
+        case (24...31,10),(1...22,11):
+            return ZodiakModel.scorpio()
+        case (23...30,11),(1...21,12):
+            return ZodiakModel.sagittarius()
+        default:
+            return ZodiakModel.capricorn()
+        }
+    }
+    
     static func aries() -> ZodiakModel {
         let zodiak = ZodiakModel()
         zodiak.zodiakName = "Aries"

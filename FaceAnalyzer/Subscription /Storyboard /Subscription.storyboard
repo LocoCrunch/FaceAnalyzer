@@ -130,7 +130,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4DY-mp-2dQ">
-                                <rect key="frame" x="357" y="20" width="30" height="30"/>
+                                <rect key="frame" x="357" y="54" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.32651078735722555" green="0.21530932996892108" blue="0.40079688330000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="XLE-O5-2Qh"/>
@@ -174,7 +174,7 @@
                             <constraint firstItem="fg7-57-BbZ" firstAttribute="leading" secondItem="f1K-qv-DSG" secondAttribute="leading" constant="116" id="knV-4F-aKa"/>
                             <constraint firstItem="GEz-nN-Ybb" firstAttribute="top" secondItem="2Vy-Vn-44s" secondAttribute="bottom" constant="8" id="lNu-hJ-uVP"/>
                             <constraint firstItem="qsM-K7-qLm" firstAttribute="top" secondItem="f1K-qv-DSG" secondAttribute="top" constant="20" id="la9-yV-M9U"/>
-                            <constraint firstItem="4DY-mp-2dQ" firstAttribute="top" secondItem="8hi-gE-ILD" secondAttribute="top" constant="20" id="mMR-9R-4ch"/>
+                            <constraint firstItem="4DY-mp-2dQ" firstAttribute="top" secondItem="f1K-qv-DSG" secondAttribute="top" constant="10" id="mMR-9R-4ch"/>
                             <constraint firstItem="f1K-qv-DSG" firstAttribute="trailing" secondItem="4DY-mp-2dQ" secondAttribute="trailing" constant="27" id="nOj-AJ-gqh"/>
                             <constraint firstItem="SGq-A7-OZJ" firstAttribute="leading" secondItem="f1K-qv-DSG" secondAttribute="leading" constant="116" id="pep-5D-jI6"/>
                             <constraint firstItem="SGq-A7-OZJ" firstAttribute="top" secondItem="uzc-fd-yYD" secondAttribute="bottom" constant="22" id="qWN-2V-FNb"/>

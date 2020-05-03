@@ -20,21 +20,27 @@ class DontKnowZodiakViewController: UIViewController {
         super.viewDidLoad()
         configure()
     }
+
 }
 
 // MARK: -
 // MARK: - Configure
 
-extension DontKnowZodiakViewController {
+private extension DontKnowZodiakViewController {
     
     func configure() {
         hideNavigationBar()
+        configureCurrentZodiak()
         configurePickerAppearance()
         configureButtonAppearance()
     }
     
     func hideNavigationBar() {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func configureCurrentZodiak() {
+        datePickerValueChanged(dateZodiakPicker)
     }
     
     func configurePickerAppearance() {
@@ -57,6 +63,7 @@ extension DontKnowZodiakViewController {
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
         gradientLayer.cornerRadius = 27
     }
+
 }
 
 // MARK: -
@@ -68,4 +75,12 @@ extension DontKnowZodiakViewController {
         let subscriptionVC = UIStoryboard(name: "Subscription", bundle: nil).instantiateInitialViewController() as! SubscriptionViewController
         navigationController?.pushViewController(subscriptionVC, animated: true)
     }
+    
+    @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
+        let zodiak = ZodiakModel.zodiak(for: sender.date)
+        zodiakDontKnowImageView.image = UIImage(named: zodiak.image)
+        zodiakDontKnowLabel.text = zodiak.zodiakName
+    }
+    
+    
 }
