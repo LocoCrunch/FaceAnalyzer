@@ -17,6 +17,7 @@ enum Storyboard: String {
     case profile = "Profile"
     case settings = "Settings"
     case dontKnowZodiak = "DontKnowZodiak"
+    case personalEffective  = "PersonalEffectiveResults"
     
     var filename: String {
         return rawValue

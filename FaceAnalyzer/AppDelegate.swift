@@ -39,7 +39,7 @@ private extension AppDelegate {
     }
     
     func setupRootViewController() {
-        let mainVC = UIStoryboard(storyboard: .nameEnter).instantiateInitialViewController() as! NameEnterViewController
+        let mainVC = UIStoryboard(storyboard: .personalEffective).instantiateInitialViewController() as! PersonalEffectiveResultsViewController
         let navigationController = UINavigationController(rootViewController: mainVC)
         
         window = UIWindow(frame: UIScreen.main.bounds)

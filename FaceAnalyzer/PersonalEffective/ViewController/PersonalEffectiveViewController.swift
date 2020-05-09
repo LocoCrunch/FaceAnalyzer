@@ -12,6 +12,7 @@ import PhotoSolution
 class PersonalEffectiveViewController: UIViewController {
     
     let photoSolution = PhotoSolution()
+    //var currentImages: [UIImage] = [UIImage]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ private extension PersonalEffectiveViewController {
     }
     
     func configurePhotoColution() {
-        photoSolution.delegate = self
+        photoSolution.delegate = self 
     }
     
     func takeAndPickPhotos() {
@@ -37,4 +38,22 @@ private extension PersonalEffectiveViewController {
         self.present(photoSolution.getPhotoPicker(maxPhotos: 1), animated: true, completion: nil)
     }
     
+}
+
+// MARK: -
+// MARK: -
+
+extension PersonalEffectiveViewController: PhotoSolutionDelegate {
+    
+    func returnImages(_ images: [UIImage]) {
+//        for image in images {
+//            if currentImages.count < maxPhotos{
+//                currentImages.append(image)
+//            }
+//        }
+    }
+    
+    func pickerCancel() {
+//        print("Closed")
+    }
 }
