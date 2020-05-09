@@ -16,5 +16,6 @@ pod 'SwiftyStoreKit'
 pod 'DeviceKit', '~> 2.0'
 pod 'CollectionViewPagingLayout'
 pod 'PhotoSolution'
+pod 'ReadMoreTextView'
 
 end
