@@ -29,18 +29,19 @@ extension PersonalEffectiveResultsViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if indexPath.row == 1 {
+        if indexPath.row == 0 {
             let headerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "HeaderCollectionViewCell", for: indexPath) as! HeaderCollectionViewCell
             headerCell.aimImageView.image = UIImage(named: "aim_analyzer")
             headerCell.backgroundImageView.image = UIImage(named: "backgroundPersonalEffective")
             headerCell.nameLabel.text = "KARA"
             return headerCell
-        } else if indexPath.row == 2 {
+        } else if indexPath.row == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralCollectionViewCell", for: indexPath) as! GeneralCollectionViewCell
             cell.generalLabel?.text = "GENERAL"
             cell.generalTextView.text = "Last update: January 28, 2020\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut tincidunt turpis. Nunc efficitur massa ante, quis euismod purus mattis eu. Proin efficitur elit erat. Quisque hendrerit tempor turpis, sit amet rhoncus orci mollis sed. Nam faucibus scelerisque risus a cursus.\n Fusce rutrum interdum erat, non iaculis velit fringilla at. Phasellus sed velit mattis, varius arcu mattis, rutrum libero. Nunc semper libero turpis, sed placerat tortor blandit dignissim.Integer augue urna, faucibus id congue ut, viverra eget leo. In vitae placerat tellus.\n Curabitur gravida ultricies nunc eu sodales. Proin vitae dui non risus convallis rhoncus. Sed finibus augue sit amet metus interdum dignissim."
             cell.generalTextView.shouldTrim = true
             cell.generalTextView.maximumNumberOfLines = 3
+            
             
             let readMoreTextAttributes: [NSAttributedString.Key: Any] = [
                 NSAttributedString.Key.foregroundColor : UIColor.orange,
@@ -55,9 +56,6 @@ extension PersonalEffectiveResultsViewController: UICollectionViewDataSource {
             return cell
         } else {
             let weakStrengthCell = collectionView.dequeueReusableCell(withReuseIdentifier: "WeakStrengthCollectionViewCell", for: indexPath) as! WeakStrengthCollectionViewCell
-            weakStrengthCell.aimImageView.image = UIImage(named: "aim_analyzer")
-            weakStrengthCell.backgroundImageView.image = UIImage(named: "backgroundPersonalEffective")
-            weakStrengthCell.nameLabel.text = "KARA"
             return weakStrengthCell
         }
     }
