@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundPersonalEffective" translatesAutoresizingMaskIntoConstraints="NO" id="RON-MM-bPb">
-                                                    <rect key="frame" x="0.0" y="5" width="412" height="310"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="412" height="315"/>
                                                 </imageView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aim_analyzer" translatesAutoresizingMaskIntoConstraints="NO" id="pzp-LU-BhD">
                                                     <rect key="frame" x="146" y="90" width="120" height="135"/>
@@ -89,7 +89,7 @@
                                                 <constraint firstItem="dMp-WV-g4P" firstAttribute="top" secondItem="Hoe-X9-1Is" secondAttribute="top" constant="42" id="rXh-Dj-vIv"/>
                                                 <constraint firstItem="Hoe-X9-1Is" firstAttribute="leading" secondItem="2VB-Qc-d68" secondAttribute="leading" constant="99" id="rjC-rc-F66"/>
                                                 <constraint firstItem="1XF-wE-3VR" firstAttribute="bottom" secondItem="RON-MM-bPb" secondAttribute="bottom" id="vIv-Iu-KXd"/>
-                                                <constraint firstItem="RON-MM-bPb" firstAttribute="top" secondItem="2VB-Qc-d68" secondAttribute="top" constant="5" id="zD0-za-kH5"/>
+                                                <constraint firstItem="RON-MM-bPb" firstAttribute="top" secondItem="2VB-Qc-d68" secondAttribute="top" id="zD0-za-kH5"/>
                                                 <constraint firstAttribute="trailing" secondItem="1XF-wE-3VR" secondAttribute="trailing" constant="35" id="ziP-zD-PtN"/>
                                             </constraints>
                                         </collectionViewCellContentView>
@@ -166,7 +166,7 @@
                                                         <constraint firstAttribute="width" constant="28" id="vts-Q0-aUi"/>
                                                     </constraints>
                                                 </imageView>
-                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-PA-q47">
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wFB-PA-q47">
                                                     <rect key="frame" x="18" y="51" width="342" height="194"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>

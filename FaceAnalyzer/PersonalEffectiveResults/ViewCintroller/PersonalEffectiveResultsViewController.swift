@@ -38,7 +38,7 @@ extension PersonalEffectiveResultsViewController: UICollectionViewDataSource {
         } else if indexPath.row == 1 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GeneralCollectionViewCell", for: indexPath) as! GeneralCollectionViewCell
             cell.generalLabel?.text = "GENERAL"
-            cell.generalTextView.text = "Last update: January 28, 2020\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut tincidunt turpis. Nunc efficitur massa ante, quis euismod purus mattis eu. Proin efficitur elit erat. Quisque hendrerit tempor turpis, sit amet rhoncus orci mollis sed. Nam faucibus scelerisque risus a cursus.\n Fusce rutrum interdum erat, non iaculis velit fringilla at. Phasellus sed velit mattis, varius arcu mattis, rutrum libero. Nunc semper libero turpis, sed placerat tortor blandit dignissim.Integer augue urna, faucibus id congue ut, viverra eget leo. In vitae placerat tellus.\n Curabitur gravida ultricies nunc eu sodales. Proin vitae dui non risus convallis rhoncus. Sed finibus augue sit amet metus interdum dignissim."
+            cell.generalTextView.text = "Last update: January 28, 2020\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut tincidunt turpis. Nunc efficitur massa ante, quis euismod purus mattis eu. Proin efficitur elit erat. Quisque hendrerit tempor turpis, sit amet rhoncus orci mollis sed. Nam faucibus scelerisque risus a cursus.\n Fusce rutrum interdum erat, non iaculis velit fringilla at. Phasellus sed velit mattis, varius arcu mattis, rutrum libero."
             cell.generalTextView.shouldTrim = true
             cell.generalTextView.maximumNumberOfLines = 3
             

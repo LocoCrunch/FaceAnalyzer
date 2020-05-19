@@ -16,6 +16,7 @@ class WeakStrengthCollectionViewCell: UICollectionViewCell {
     
     // - Data
     private var name = ["Reaserved","Insensitive","Bossy","Agressive"]
+    private var name2 = ["Hard-working","Diplomatic","Charming","Calm","Objective","Intelligent"]
     
     override func layoutSubviews() {
         super.layoutSubviews()
@@ -35,8 +36,9 @@ extension WeakStrengthCollectionViewCell: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeakStrengthTableViewCell", for: indexPath) as! WeakStrengthTableViewCell
         cell.categoryNameLabel?.text = self.name[indexPath.row]
-        cell.progressLabel?.text = "78%"
-        cell.progressView.progress = 0.78
+        cell.progressView.progress = 0.77
+        let currentProgress = cell.progressView.progress
+        cell.progressLabel?.text = "\(currentProgress * 100)%"
         return cell
     }
     
